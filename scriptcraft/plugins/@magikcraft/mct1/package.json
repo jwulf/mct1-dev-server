@@ -1,0 +1,58 @@
+{
+    "name": "@magikcraft/mct1",
+    "version": "0.1.3",
+    "description": "Minecraft for Type 1 Diabetes",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"No tests yet\" && exit 0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Magikcraft/mct1.git"
+    },
+    "keywords": [
+        "minecraft",
+        "magikcraft",
+        "sma",
+        "scriptcraft"
+    ],
+    "author": "Magikcraft.io",
+    "contributors": [
+        "Tim Marwick <tim@magikcraft.io> (https://triyuga.github.io/)",
+        "Jonn Dillon (https://github.com/Technosasquach)",
+        "Katie Morgan",
+        "Josh Wulf <josh@magikcraft.io> (https://github.com/jwulf)"
+    ],
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Magikcraft/mct1/issues"
+    },
+    "homepage": "https://github.com/Magikcraft/mct1#readme",
+    "scriptcraft_load_dir": "autoload",
+    "devDependencies": {
+        "@types/typescript": "^2.0.0",
+        "husky": "^1.3.1",
+        "lint-staged": "^8.1.5",
+        "prettier": "1.16.4",
+        "tslint-config-prettier": "^1.18.0"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "tsc && lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.{ts,json,css,md}": [
+            "prettier --write",
+            "git add"
+        ]
+    },
+    "dependencies": {
+        "@magikcraft/commando": "0.0.4",
+        "@magikcraft/core": "^0.1.27",
+        "@scriptcraft/types": "^1.1.16"
+    },
+    "config": {
+        "access": "public"
+    }
+}
