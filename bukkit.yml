@@ -11,7 +11,6 @@
 # Forums: https://www.spigotmc.org/
 # Bug tracker: https://www.spigotmc.org/go/bugs
 
-
 settings:
   allow-end: true
   warn-on-overload: true
@@ -22,7 +21,7 @@ settings:
   query-plugins: true
   deprecated-verbose: default
   shutdown-message: Server closed
-  world-container: worlds
+  world-container: mct1-worlds
   disable:
     watchdog: true
 spawn-limits:
