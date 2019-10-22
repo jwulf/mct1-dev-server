@@ -1,0 +1,74 @@
+{
+  "_from": "@magikcraft/op-all@^1.0.0",
+  "_id": "@magikcraft/op-all@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-po+cbdGT30Jm2Uz9znHwIBIvQAKFlTIQG2zPpc7dVk+1jZANqbMnPzKlHjkkneFwuA7DhfSgvdgAJQsUSK/Few==",
+  "_location": "/@magikcraft/op-all",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@magikcraft/op-all@^1.0.0",
+    "name": "@magikcraft/op-all",
+    "escapedName": "@magikcraft%2fop-all",
+    "scope": "@magikcraft",
+    "rawSpec": "^1.0.0",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@magikcraft/op-all/-/op-all-1.0.0.tgz",
+  "_shasum": "751b7ab4db7da35570057bebc7b714e7159229b1",
+  "_spec": "@magikcraft/op-all@^1.0.0",
+  "_where": "/Users/sitapati/workspace/mct1/dev-server",
+  "author": {
+    "name": "Josh Wulf",
+    "email": "josh@magikcraft.io"
+  },
+  "bugs": {
+    "url": "https://github.com/Magikcraft/plugin-op-all/issues"
+  },
+  "bundleDependencies": false,
+  "config": {
+    "access": "public"
+  },
+  "deprecated": false,
+  "description": "Give op to everyone who joins the server",
+  "devDependencies": {
+    "@scriptcraft/types": "^1.0.1",
+    "husky": "^1.3.1",
+    "lint-staged": "^8.1.5",
+    "prettier": "^1.16.4"
+  },
+  "homepage": "https://github.com/Magikcraft/plugin-op-all#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsc && git add . && lint-staged"
+    }
+  },
+  "keywords": [
+    "scriptcraft",
+    " scriptcraft-sma",
+    " plugin",
+    " minecraft"
+  ],
+  "license": "ISC",
+  "lint-staged": {
+    "*.{ts,js,json,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "name": "@magikcraft/op-all",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Magikcraft/plugin-op-all.git"
+  },
+  "scriptcraft_load_dir": "autoload",
+  "smaPluginConfig": {
+    "scriptcraft_load_dir": "autoload"
+  },
+  "version": "1.0.0"
+}

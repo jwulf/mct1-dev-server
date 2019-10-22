@@ -1,0 +1,109 @@
+{
+  "_from": "@magikcraft/core",
+  "_id": "@magikcraft/core@0.1.28",
+  "_inBundle": false,
+  "_integrity": "sha512-QFikfXClWiEgOoiyAUiuUgS7DcN7XeTT17/EU+CSc5cphWNo5rog67YpP3xp5EVVseqkODWUwVXTzTPm4kqeqA==",
+  "_location": "/@magikcraft/core",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@magikcraft/core",
+    "name": "@magikcraft/core",
+    "escapedName": "@magikcraft%2fcore",
+    "scope": "@magikcraft",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@magikcraft/core/-/core-0.1.28.tgz",
+  "_shasum": "9a233108d73ac23004a76c4ef8c9dbdf9058c268",
+  "_spec": "@magikcraft/core",
+  "_where": "/Users/sitapati/workspace/mct1/mct1-dev-server",
+  "author": {
+    "name": "Josh Wulf",
+    "email": "josh@magikcraft.io",
+    "url": "https://github.com/Magikcraft"
+  },
+  "bugs": {
+    "url": "https://github.com/Magikcraft/core/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "typescript": "^3.5.3"
+  },
+  "deprecated": false,
+  "description": "Magikcraft core library for SMA plugins",
+  "devDependencies": {
+    "@magikcraft/op-all": "^1.0.0",
+    "@scriptcraft/types": "^1.1.16",
+    "@types/jasmine": "^3.3.12",
+    "husky": "^1.3.1",
+    "lint-staged": "^8.1.5",
+    "prettier": "^1.16.4",
+    "typedoc": "^0.14.2"
+  },
+  "homepage": "https://www.magikcraft.io",
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsc && lint-staged"
+    }
+  },
+  "keywords": [
+    "scriptcraft",
+    "magikcraft",
+    "minecraft"
+  ],
+  "license": "Apache-2.0",
+  "lint-staged": {
+    "*.{ts,json,css,md},!*.d.ts": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.js": [
+      "git add"
+    ],
+    "*.json": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "main": "lib/index.js",
+  "name": "@magikcraft/core",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Magikcraft/core.git"
+  },
+  "scripts": {
+    "docs": "typedoc --out ./docs --tsconfig ./tsconfig.json --excludePrivate --excludeNotExported --mode file",
+    "start": "tsc -w",
+    "test": "tsc && smac start -t -e"
+  },
+  "smaPluginConfig": {
+    "scriptcraft_autoload_dir": "autoload"
+  },
+  "smaServerConfig": {
+    "port": "25565",
+    "serverName": "magikcraft-core-dev",
+    "test": true,
+    "dockerTag": "latest",
+    "bind": [
+      {
+        "src": "./",
+        "dst": "scriptcraft-plugins/@magikcraft/core/"
+      }
+    ],
+    "worlds": [
+      {
+        "downloadUrl": "https://sitapatis-sydney-storage.s3.amazonaws.com/MCT1/mct1-worlds-0.1.1.zip",
+        "version": "0.1.1",
+        "name": "mct1"
+      }
+    ]
+  },
+  "version": "0.1.28"
+}
