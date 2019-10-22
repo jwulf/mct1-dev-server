@@ -21,7 +21,7 @@ cd mct1-dev-server
 git clone <git_url_of_your mct1-worlds_fork>
 ```
 
-5. Create a featur branch for the worlds:
+5. Create a feature branch for the worlds:
 
 ```bash
 cd mct1-worlds
