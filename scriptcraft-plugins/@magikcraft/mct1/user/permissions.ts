@@ -2,6 +2,7 @@ const AdminUsers = [
     'triyuga',
     'sitapati',
     'RedMoonWT1',
+    'Mr_Koroshiya',
     // 'Purpsta',
 ]
 
