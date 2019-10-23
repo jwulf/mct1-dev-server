@@ -39,7 +39,7 @@ If you need to modify the port the server runs on, edit `server.properties` and 
 To run the server, use the following command:
 
 ```bash
-java -jar paperclip
+java -jar paperclip.jar
 ```
 
 ## Commands
